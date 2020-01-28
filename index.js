@@ -18,7 +18,7 @@ function reduce(array, work, startingPoint=0) {
     r = work(array[i], total);
     //console.log(Boolean(array[i]));
   }
-  return total;
+  return r;
 }
 
 //function (){}
