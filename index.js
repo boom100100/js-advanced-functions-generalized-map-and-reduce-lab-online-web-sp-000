@@ -12,7 +12,7 @@ function map(array, work){
 }
 
 function reduce(array, work, startingPoint=0) {
-    let r = (!!starting) ? starting : src[0];
+    let r = (!!startingPoint) ? startingPoint : src[0];
     let total = startingPoint;
   for (let i = startingPoint; i < array.length; i++ ) {
     r = work(array[i], total);
