@@ -14,7 +14,8 @@ function map(array, work){
 function reduce(array, work, startingPoint=0) {
     let r = (!!startingPoint) ? startingPoint : array[0];
     let total = startingPoint;
-  for (let i = startingPoint; i < array.length; i++ ) {
+    //let i = (!!startingPoint) ? 0 : 1;
+  for (let i = (!!startingPoint) ? 0 : 1; i < array.length; i++ ) {
     r = work(array[i], total);
     //console.log(Boolean(array[i]));
   }
