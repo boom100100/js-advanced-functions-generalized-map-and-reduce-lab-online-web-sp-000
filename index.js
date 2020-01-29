@@ -16,7 +16,7 @@ function reduce(array, work, startingPoint=0) {
     //let total = startingPoint;
     //let i = (!!startingPoint) ? 0 : 1;
   for (let i = (!!startingPoint) ? 0 : 1; i < array.length; i++ ) {
-    r = work(array[i], total);
+    r = work(array[i], r);
     //console.log(Boolean(array[i]));
   }
   return r;
